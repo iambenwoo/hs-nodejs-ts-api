@@ -1,0 +1,46 @@
+{
+  "name": "hs-nodejs-ts-api",
+  "version": "1.0.0",
+  "author": "Ben",
+  "main": "server.js",
+  "license": "MIT",
+  "scripts": {
+    "start:dev": "nodemon",
+    "build": "rimraf ./build && tsc",
+    "start": "yarn build && yarn node build/server.js",
+    "lint": "eslint src/**/*.ts",
+    "format": "eslint src/**/*.ts --fix"
+  },
+  "dependencies": {
+    "@azure/cosmos": "^3.9.3",
+    "@types/compression": "^1.7.0",
+    "@types/dompurify": "^2.1.0",
+    "@types/express": "^4.17.9",
+    "@types/morgan": "^1.9.2",
+    "@types/node": "^14.14.14",
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.8.1",
+    "express-winston": "^4.0.5",
+    "helmet": "^4.2.0",
+    "moment-timezone": "^0.5.32",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.6",
+    "rimraf": "^3.0.2",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.3",
+    "validator": "^13.5.2",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.11.0",
+    "@typescript-eslint/parser": "^4.11.0",
+    "editorconfig": "^0.15.3",
+    "eslint": "^7.16.0",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-prettier": "^3.3.0",
+    "prettier": "^2.2.1"
+  }
+}
